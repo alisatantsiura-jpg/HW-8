@@ -1,4 +1,64 @@
-body {
-    background-color: blueviolet;
-    text-align: center;
+style{body{
+    background:#F8C66C;
+    font-family: Arial, sans-serif;
+}
+
+fieldset{
+    margin-bottom:15px;
+    padding:15px;
+}
+
+table td{
+    padding:6px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=date],
+select{
+    width:220px;
+}
+
+textarea{
+    width:220px;
+    height:80px;
+}}
+body{
+    background:#F8C66C;
+    font-family: Arial, sans-serif;
+}
+
+fieldset{
+    margin-bottom:15px;
+    padding:15px;
+}
+
+table td{
+    padding:6px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=date],
+select{
+    width:220px;
+}
+
+textarea{
+    width:220px;
+    height:80px;
+.vertical-form {
+  display: flex; /* Робить форму flex-контейнером */
+  flex-direction: column; /* Розташовує елементи вертикально */
+  gap: 15px; /* Створює акуратний відсуток між полями */
+  max-width: 400px; /* Задає максимальну ширину форми для зручності */
+}
+
+.vertical-form input {
+  padding: 10px; /* Додає внутрішні відступи до полів вводу */
+}
 }
