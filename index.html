@@ -3,39 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunication</title>
+    <title>Анкета відвідувача ресторану</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-      <section> 
-        <form >
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="lastname">Lastname:</label>
-            <input type="text" id="lastname" name="lastname" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+    <h1>Анкета відвідувача ресторану</h1>
+    <section> 
+        <form class="vertical-form" >
+            <fieldset>
+                <legend>Контактна інформація</legend>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone number">Телефон:</label>
+                <input type="tel" id="phone number" name="phone number" value="у фоматі 000-000-00-00" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="visit-date">Дата відвідування</label>
+                <input type="date" id="visit-date" name="visit-date" value="дд.мм.гггг" required>
+            </fieldset>
+            fieldset>
+                <legend>Персональна інформація</legend>
+                <label for="age">вік:</label>
+                <input type="number" id="age" name="age" min="0" required>
+                <label for="favourite-dish">Улюблена кухня:</label>
+                <input type="text" id="favourite-dish" name="favourite-dish" required>
+                <label for="What else do you want to see in the menu">Які ще страви ви хочете бачити в меню:</label>
+            </fieldset>
+            <fieldset>
+                <legend>Оцінка нашого закладу</legend>
+                <input type="checkbox" name="reason1">
+            Поряд з місцем роботи<br>
+
+            <input type="checkbox" name="reason2">
+            Побачив рекламу<br>
+
+            <input type="checkbox" name="reason3">
+            Порадили друзі<br>
+
+            <input type="checkbox" name="reason4">
+            Найкраще співвідношення ціни і якості<br><br>
+             <p><b>Чи будете ви рекомендувати наш заклад своїм знайомим?</b></p>
+
+            <input type="radio" name="recommend" value="yes">
+            Так<br>
+
+            <input type="radio" name="recommend" value="no">
+            Ні
+            </fieldset>
             <button type="submit">Submit</button>
         </form>
      </section>
-     <section> 
-        <form >
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="lastname">Lastname:</label>
-            <input type="text" id="lastname" name="lastname" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-     </section>
+     
+    </body>
+</html>ection>
     </body>
 </html>
